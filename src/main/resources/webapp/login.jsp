@@ -1,82 +1,43 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-.bg-img {
-  /* La imagen usada */
-  background-image: url("https://www.rionegro.com.ar/wp-content/uploads/2019/06/Hielo-Azul.jpg?w=920&h=517&resize=920,517");
-  min-height: 380px;
-  /* Imagen centrada */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-/* Estilos del container */
-.container {
-  position: absolute;
-  right: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-}
-/* tamaño de los campos de ingreso */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-/* Estilo del boton de ingresar */
-.btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-.btn:hover {
-  opacity: 1;
-}
-</style>
-</head>
-<body>
-
-<h2>Turismo Tierra Media</h2>
-<div class="bg-img">
-
-  <form action="login" class="container" method="post" >
-    <h1>Bienvenido!</h1>
-
-    <label for="usuario"><b>Usuario</b></label>
-    <input type="text" class="form-control" placeholder="Usuario" name="username" required>
-
-    <label for="psw"><b>Contraseña</b></label>
-    <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
-
-    <button type="submit" class="btn">Ingresar</button>
-  </form>
- 
-</div>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="form-container">
+        <h1 class="form-title">Turismo en la Tierra Media</h1>
+        <form class="form-login">
+          <label class="form-label" name="usuario"> Usuario </label>
+          <input
+            class="form-field"
+            name="usuario"
+            type="usuario"
+            placeholder="Ingresa tu nombre de usuario"
+          />
+          <label class="form-label" name="password"> Contraseña </label>
+          <input
+            class="form-field"
+            name="password"
+            type="password"
+            placeholder="Ingresa tu contraseña"
+          />
+          <button class="form-button" type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
